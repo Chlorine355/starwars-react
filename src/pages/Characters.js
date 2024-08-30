@@ -66,6 +66,13 @@ const Characters = () => {
     loadNextPage();
   }
 
+  const gender_to_color = {
+    "male": "#4baeff",
+    "female": "pink",
+    "hermaphrodite": "lime",
+    "n/a": "#d0d0d0"
+  }
+
 
 
   return (
@@ -100,7 +107,7 @@ const Characters = () => {
             <span>Height: {character.height}</span>
             <span>Mass: {character.mass}</span>
             <span>Born: {character.birth_year}</span>
-            <span>Gender: {character.gender}</span>
+            <span style={{ backgroundColor: gender_to_color[character.gender], width: "fit-content", padding: "3px", borderRadius: "3px" }}>{character.gender}</span>
           </li>
       }) }
       </ul>
