@@ -1,5 +1,5 @@
 const Banner = () => {
-  return (<svg width="793" height="719" viewBox="0 0 793 719" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+  return (<svg width="" height="" viewBox="0 0 793 719" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <mask id="mask0_2530_7435" maskUnits="userSpaceOnUse" x="0" y="0" width="793" height="728">
 <rect width="793" height="727.026" fill="#C4C4C4"/>
 </mask>

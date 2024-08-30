@@ -82,14 +82,17 @@ const Characters = () => {
       </div>
     </div>
     <div className="characters-wrapper">
-    Filter by eye color: <Select style={{width: "200px"}}
-      options={options}
-      labelField="name"
-      valueField="id"
-      values={[{id: 1,  name: 'all'}]}
-      onChange={(values) => {setFilterVal(values[0]["name"]); console.log(values)}}
-    />;
-      <h1 style={{color: "white"}}>Pick anyone from {totalCount} characters!</h1>
+      <h1 style={{color: "white", textAlign: "center", paddingLeft: "20px", paddingRight: "20px"}}>Pick anyone from {totalCount} characters!</h1>
+<div style={{display: "flex", alignItems: "center", gap: "10px", color: "white"}}>
+      Filter by eye color: <Select style={{width: "200px", backgroundColor: "white", color: "black"}}
+        options={options}
+        labelField="name"
+        valueField="id"
+        values={[{id: 1,  name: 'all'}]}
+        onChange={(values) => {setFilterVal(values[0]["name"]); console.log(values)}}
+      />
+      </div>
+
       <ul className="cards">
       { characters.filter( (character) => character.eye_color === filterVal || filterVal === "all" ).map(character => {
         return  <li className="card" key={character.name} onClick={ () => {showModal(character)} }>
