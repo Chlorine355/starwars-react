@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/starwars-react/static/css/main.21f3149f.css",
+    "main.js": "/starwars-react/static/js/main.9f8bb108.js",
+    "static/media/death-star.png": "/starwars-react/static/media/death-star.7602773496c48d637bf4.png",
+    "static/media/icon-female.png": "/starwars-react/static/media/icon-female.f101d8e52ed2c8c22390.png",
+    "static/media/icon-male.png": "/starwars-react/static/media/icon-male.e3858cefa4f038e6b348.png",
+    "index.html": "/starwars-react/index.html",
+    "main.21f3149f.css.map": "/starwars-react/static/css/main.21f3149f.css.map",
+    "main.9f8bb108.js.map": "/starwars-react/static/js/main.9f8bb108.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21f3149f.css",
+    "static/js/main.9f8bb108.js"
+  ]
+}
