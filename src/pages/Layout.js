@@ -1,7 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import Logo from '../Logo';
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 
 
 const Layout = () => {
