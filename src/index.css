@@ -212,6 +212,7 @@ text-align: left;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  cursor: pointer;
 }
 
 .characters-wrapper {
@@ -230,7 +231,27 @@ text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,.6)
+  background-color: rgba(0,0,0,.6);
+  z-index: 10000;
+}
+
+.modal-inner {
+  width: 300px;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+top: 15px;
+right: 15px;
+cursor: pointer;
 }
 
 .loader {

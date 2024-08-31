@@ -77,13 +77,20 @@ const Characters = () => {
 
   return (
     <>
-    <div className="modal" onClick={toggleModal} style={{display: modalShown ? "flex" : "none"}}>
+    <div className="modal" style={{display: modalShown ? "flex" : "none"}}>
       <div className="modal-inner">
+        <div className="modal-close" onClick={toggleModal}>Close</div>
         {modalCharacter ?
           <>
-          <span>{modalCharacter.name}</span>
-          <span>{modalCharacter.gender == "male" ? <img src={male_icon}/> : ""}</span>
-          <span>{modalCharacter.gender == "female" ? <img src={female_icon}/> : ""}</span>
+          <span style={{fontWeight: "bold"}}>{modalCharacter.name}</span>
+          <span>Born: {modalCharacter.birth_year}</span>
+          <span>Eye color: {modalCharacter.eye_color}</span>
+          <span>Hair color: {modalCharacter.hair_color}</span>
+          <span>Skin color: {modalCharacter.skin_color}</span>
+          <span>Height: {modalCharacter.height}</span>
+          <span>Mass: {modalCharacter.mass}</span>
+          <span>{modalCharacter.gender == "male" && <img style={{width: "40px"}} src={male_icon}/>}
+                {modalCharacter.gender == "female" && <img style={{width: "40px"}} src={female_icon}/>}</span>
         </>
           : ""}
       </div>
@@ -103,7 +110,7 @@ const Characters = () => {
       <ul className="cards">
       { characters.filter( (character) => character.eye_color === filterVal || filterVal === "all" ).map(character => {
         return  <li className="card" key={character.name} onClick={ () => {showModal(character)} }>
-            <span>{character.name}</span>
+            <span style={{fontWeight: "bold"}}>{character.name}</span>
             <span>Height: {character.height}</span>
             <span>Mass: {character.mass}</span>
             <span>Born: {character.birth_year}</span>
